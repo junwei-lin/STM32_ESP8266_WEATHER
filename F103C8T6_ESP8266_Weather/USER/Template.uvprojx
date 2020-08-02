@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\USER;..\CORE;..\STM32F10x_FWLib\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\SYSTEM\OLED;..\SYSTEM\ATK-ESP8266;..\SYSTEM\esp8266;..\SYSTEM\cjson;..\SYSTEM\OLED;..\SYSTEM\timer;..\SYSTEM</IncludePath>
+              <IncludePath>..\USER;..\CORE;..\STM32F10x_FWLib\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\SYSTEM\OLED;..\SYSTEM\ATK-ESP8266;..\SYSTEM\esp8266;..\SYSTEM\cjson;..\SYSTEM\OLED;..\SYSTEM\timer;..\SYSTEM;..\SYSTEM</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>

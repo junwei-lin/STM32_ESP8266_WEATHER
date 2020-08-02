@@ -217,27 +217,27 @@ void Wifi_Connect(void)
 	Out_Trans();
 	cmd = (u8*)malloc(100);
 	send_data("AT+RST\r\n");
-	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(10);
+	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(100);
 	send_data("ATE0\r\n");
-	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(10);
+	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(100);
 	send_data("AT+CWMODE=1\r\n");
-	OLED_Fill(14+10*i,27,22+10*i,39);i++;delay_ms(10);
+	OLED_Fill(14+10*i,27,22+10*i,39);i++;delay_ms(100);
 	send_data("AT+CWQAP\r\n");
-	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(10);
-	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(10);
+	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(100);
+	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(100);
 	sprintf((char *)cmd,"AT+CWJAP=\"%s\",\"%s\"\r\n",wifi_name,wifi_password);
 	send_data(cmd);
-	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(10);
-	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(10);
-	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(10);
-	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(10);
-	OLED_Fill(14+10*i,27,22+10*i,39); delay_ms(10);
+	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(100);
+	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(100);
+	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(100);
+	OLED_Fill(14+10*i,27,22+10*i,39);i++; delay_ms(100);
+	OLED_Fill(14+10*i,27,22+10*i,39); delay_ms(100);
 	free(cmd);
 	OLED_ShowString(32,44,(unsigned char *)"Connect!",16);
 	OLED_Refresh();
-	delay_ms(10);
+	delay_ms(100);
 	OLED_Clear();
-	delay_ms(10);
+	delay_ms(100);
 	Show_Weather_Wait();
 }
 /*功能  ：获取天气 */
@@ -321,7 +321,7 @@ void Get_Time(void)
 	time.day = atoi(date_str[2]);	
 	time.week = Check_date(time.year,time.month,time.day);
 	cJSON_Delete(root);
-	TIM2_Init(9999,799);
+	TIM2_Init(9999,7199);
 	lflag.timer_flag =0;
 }
 /*功能  ：计算周几 */
