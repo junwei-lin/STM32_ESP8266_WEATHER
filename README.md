@@ -16,5 +16,5 @@ STM32通过串口发送AT指令控制ESP8266与网站建立透传，通过HTTP�
 
 
 ## 实物 ##
-> 拍照留念
 
+![avatar](https://github.com/junwei-lin/STM32_ESP8266_WEATHER/blob/master/F103C8T6_ESP8266_Weather/WEATHER.JPG)
